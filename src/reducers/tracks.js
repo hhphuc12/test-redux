@@ -29,7 +29,7 @@ function addTrack(state, action) {
 }
 
 function delTrack(state, action) {
-  for(let i = 1; i < state.length; i++) {
+  for(let i = 0; i < state.length; i++) {
     if(state[i].id === action.id) {
       state.splice(i, 1);
     }
